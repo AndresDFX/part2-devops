@@ -1,0 +1,35 @@
+# Archivos y directorios generados por Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.plan
+
+# Archivos que podrían contener información sensible
+*.tfvars
+secrets.auto.tfvars
+
+# Archivos misceláneos
+*.log
+*.bak
+*.swp
+*.bak
+*.cache
+*.DS_Store
+*.out
+*.pid
+*.save
+*.orig
+*.retry
+
+# Carpetas y archivos de IDE y editores
+.vscode/
+.idea/
+*.iml
+*.iws
+*.suo
+*.user
+*.sln.docstates
+*.sln.ide/
+
+# Otros
+*.pem
