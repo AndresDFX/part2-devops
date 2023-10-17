@@ -108,5 +108,5 @@ resource "aws_security_group_rule" "allow_ssh" {
   from_port         = 22
   to_port           = 22
   protocol          = "tcp"
-  cidr_blocks       = ["0.0.0.0/0"] # Esto permite el acceso desde cualquier lugar. Es mejor restringirlo cuando estés en un entorno de producción.
+  cidr_blocks       = ["0.0.0.0/0"]
 }
