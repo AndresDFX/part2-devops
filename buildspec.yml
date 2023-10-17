@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Instalando Terraform..."
+      - sudo apt-get update && sudo apt-get install -y wget unzip
+      - wget https://releases.hashicorp.com/terraform/1.0.11/terraform_1.0.11_linux_amd64.zip
+      - unzip terraform_1.0.11_linux_amd64.zip
+      - sudo mv terraform /usr/local/bin/
+      - rm terraform_1.0.11_linux_amd64.zip
+  build:
+    commands:
+      - echo "Inicializando Terraform..."
+      - terraform init
+      - echo "Aplicando Terraform..."
+      - terraform apply -auto-approve
