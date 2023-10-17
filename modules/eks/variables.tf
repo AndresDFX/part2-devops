@@ -32,3 +32,14 @@ variable "key_name" {
   description = "The key name to use for the worker nodes"
   default     = ""
 }
+
+variable "ssh_key_name" {
+  description = "The name of the SSH key pair to allow access to the worker nodes"
+  type        = string
+  default     = "test"
+}
+
+variable "eks_sg_id" {
+  description = "ID of the EKS security group"
+  type        = string
+}
